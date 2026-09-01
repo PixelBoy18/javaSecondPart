@@ -1,8 +1,7 @@
 
 import static java.lang.System.out;
 
-public class Car {
-    boolean isON; //false
+public class Car extends engines{
     boolean isClose; //false
     String brand;
     double width;
@@ -20,15 +19,6 @@ public class Car {
     }
 
     //methods
-    public void on () {
-        out.println("car turned on");
-        isON = true;
-    }
-
-    public void off() {
-        out.println("car turned off");
-        isON = false;
-    }
 
     public void openDoor() {
         out.println("door opened");
